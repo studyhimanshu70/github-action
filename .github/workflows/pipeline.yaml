@@ -17,7 +17,9 @@ jobs:
          steps:
            - run: echo "First Step for Hello world."                  
      print-hello-world-4:
-         needs: print-hello-world-2
+         needs: 
+             - print-hello-world-2
+             - print-hello-world-3
          runs-on: ubuntu-latest
          steps:
            - run: echo "First Step for Hello world."                     
