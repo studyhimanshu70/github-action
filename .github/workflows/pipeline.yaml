@@ -1,0 +1,8 @@
+# building a first pipeline
+name: My First Git Pipeline
+on: [push]
+jobs: 
+     print-hello-world:
+         runs-on: ubuntu-latest
+         steps:
+           - run: echo "First Step for Hello world."
